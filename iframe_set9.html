@@ -12,9 +12,17 @@
             background-color: #fff;
         }
         
+        label {
+            display: block;
+            margin: 5px 0 2px 0;
+            font-weight: 500;
+            color: #333;
+            font-size: 14px;
+        }
+        
         input[type="text"] {
             padding: 8px 12px;
-            margin: 5px;
+            margin: 5px 0;
             border: 1px solid #ddd;
             border-radius: 4px;
             font-size: 14px;
@@ -39,7 +47,7 @@
         
         textarea {
             padding: 8px 12px;
-            margin: 5px;
+            margin: 5px 0;
             border: 1px solid #ddd;
             border-radius: 4px;
             font-size: 14px;
@@ -50,9 +58,11 @@
     </style>
 </head>
 <body>
-    <input type="text" value="input-shadow-9">
+    <label for="input-shadow-9">Input Shadow 9:</label>
+    <input type="text" id="input-shadow-9" value="input-shadow-9">
     <button>button-shadow-9</button>
-    <textarea>text-area-shadow-9</textarea>
+    <label for="textarea-shadow-9">Text Area Shadow 9:</label>
+    <textarea id="textarea-shadow-9">text-area-shadow-9</textarea>
 </body>
 </html>
 

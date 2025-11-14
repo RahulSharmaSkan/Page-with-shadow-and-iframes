@@ -49,9 +49,17 @@
             color: #555;
         }
         
+        label {
+            display: block;
+            margin: 5px 0 2px 0;
+            font-weight: 500;
+            color: #333;
+            font-size: 14px;
+        }
+        
         input[type="text"] {
             padding: 8px 12px;
-            margin: 5px;
+            margin: 5px 0;
             border: 1px solid #ddd;
             border-radius: 4px;
             font-size: 14px;
@@ -76,7 +84,7 @@
         
         textarea {
             padding: 8px 12px;
-            margin: 5px;
+            margin: 5px 0;
             border: 1px solid #ddd;
             border-radius: 4px;
             font-size: 14px;
@@ -109,9 +117,11 @@
         <!-- Set 1: Regular DOM -->
         <div class="set regular-dom">
             <div class="set-title">Set 1 (Regular DOM)</div>
-            <input type="text" value="input-1">
+            <label for="input-1">Input 1:</label>
+            <input type="text" id="input-1" value="input-1">
             <button>button-1</button>
-            <textarea>text-area-1</textarea>
+            <label for="textarea-1">Text Area 1:</label>
+            <textarea id="textarea-1">text-area-1</textarea>
         </div>
         
         <!-- Set 2: 1-level shadow root -->
@@ -135,9 +145,11 @@
         <!-- Set 5: Regular DOM -->
         <div class="set regular-dom">
             <div class="set-title">Set 5 (Regular DOM)</div>
-            <input type="text" value="input-5">
+            <label for="input-5">Input 5:</label>
+            <input type="text" id="input-5" value="input-5">
             <button>button-5</button>
-            <textarea>text-area-5</textarea>
+            <label for="textarea-5">Text Area 5:</label>
+            <textarea id="textarea-5">text-area-5</textarea>
         </div>
         
         <!-- Set 6: Shadow root (open) containing iframe -->
@@ -149,9 +161,11 @@
         <!-- Set 7: Regular DOM -->
         <div class="set regular-dom">
             <div class="set-title">Set 7 (Regular DOM)</div>
-            <input type="text" value="input-7">
+            <label for="input-7">Input 7:</label>
+            <input type="text" id="input-7" value="input-7">
             <button>button-7</button>
-            <textarea>text-area-7</textarea>
+            <label for="textarea-7">Text Area 7:</label>
+            <textarea id="textarea-7">text-area-7</textarea>
         </div>
         
         <!-- Set 8: 4-level nested shadow root -->
@@ -199,10 +213,19 @@
                     width: 300px;
                     min-height: 60px;
                 }
+                label {
+                    display: block;
+                    margin: 5px 0 2px 0;
+                    font-weight: 500;
+                    color: #333;
+                    font-size: 14px;
+                }
             </style>
-            <input type="text" value="input-shadow-2">
+            <label for="input-shadow-2">Input Shadow 2:</label>
+            <input type="text" id="input-shadow-2" value="input-shadow-2">
             <button>button-shadow-2</button>
-            <textarea>text-area-shadow-2</textarea>
+            <label for="textarea-shadow-2">Text Area Shadow 2:</label>
+            <textarea id="textarea-shadow-2">text-area-shadow-2</textarea>
         `;
         
         // Set 4: 2-level nested shadow root
@@ -258,10 +281,19 @@
                     width: 300px;
                     min-height: 60px;
                 }
+                label {
+                    display: block;
+                    margin: 5px 0 2px 0;
+                    font-weight: 500;
+                    color: #333;
+                    font-size: 14px;
+                }
             </style>
-            <input type="text" value="input-shadow-4">
+            <label for="input-shadow-4">Input Shadow 4:</label>
+            <input type="text" id="input-shadow-4" value="input-shadow-4">
             <button>button-shadow-4</button>
-            <textarea>text-area-shadow-4</textarea>
+            <label for="textarea-shadow-4">Text Area Shadow 4:</label>
+            <textarea id="textarea-shadow-4">text-area-shadow-4</textarea>
         `;
         
         // Set 6: Shadow root (open) containing iframe
@@ -409,10 +441,19 @@
                     width: 300px;
                     min-height: 60px;
                 }
+                label {
+                    display: block;
+                    margin: 5px 0 2px 0;
+                    font-weight: 500;
+                    color: #333;
+                    font-size: 14px;
+                }
             </style>
-            <input type="text" value="input-shadow-8">
+            <label for="input-shadow-8">Input Shadow 8:</label>
+            <input type="text" id="input-shadow-8" value="input-shadow-8">
             <button>button-shadow-8</button>
-            <textarea>text-area-shadow-8</textarea>
+            <label for="textarea-shadow-8">Text Area Shadow 8:</label>
+            <textarea id="textarea-shadow-8">text-area-shadow-8</textarea>
         `;
         
         // Set 9: 2-level nested shadow root containing iframe
@@ -623,10 +664,19 @@
                     width: 300px;
                     min-height: 60px;
                 }
+                label {
+                    display: block;
+                    margin: 5px 0 2px 0;
+                    font-weight: 500;
+                    color: #333;
+                    font-size: 14px;
+                }
             </style>
-            <input type="text" value="input-shadow-10">
+            <label for="input-shadow-10">Input Shadow 10:</label>
+            <input type="text" id="input-shadow-10" value="input-shadow-10">
             <button>button-shadow-10</button>
-            <textarea>text-area-shadow-10</textarea>
+            <label for="textarea-shadow-10">Text Area Shadow 10:</label>
+            <textarea id="textarea-shadow-10">text-area-shadow-10</textarea>
         `;
     </script>
 </body>
